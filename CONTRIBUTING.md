@@ -47,9 +47,18 @@ The `.mise.toml` file is intended to be shared in version control.
 
 For personal settings use `.mise.local.toml`.
 
+## EditorConfig
+
+[editorconfig.org](https://editorconfig.org)
+
+EditorConfig helps maintain consistent coding styles for multiple developers
+working on the same project across various editors and IDEs.
+
+VS Code integration: `editorconfig.editorconfig`
+
 ## Lefthook
 
 [lefthook.dev](https://lefthook.dev)
 
-_Lefthook_ is a Git hooks manager. If not found, it will be installed via
+Lefthook is a Git hooks manager. If not found, it will be installed via
 Homebrew.

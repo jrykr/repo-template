@@ -4,7 +4,7 @@ This is an opinionated Git repository template using:
 
 - ✅ mise
 - ✅ Lefthook (via Homebrew)
-- ❌ Editor Config
+- ✅ Editor Config
 - ❌ PNPM
 - ❌ markdownlint-cli2
 - ❌ Taplo
