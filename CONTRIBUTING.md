@@ -46,3 +46,10 @@ of tools that you invoke on the command line and in your CI environment.
 The `.mise.toml` file is intended to be shared in version control.
 
 For personal settings use `.mise.local.toml`.
+
+## Lefthook
+
+[lefthook.dev](https://lefthook.dev)
+
+_Lefthook_ is a Git hooks manager. If not found, it will be installed via
+Homebrew.

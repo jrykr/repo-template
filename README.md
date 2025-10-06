@@ -3,15 +3,20 @@
 This is an opinionated Git repository template using:
 
 - ✅ mise
-- ❌ Lefthook
-- ❌ Commitlint
-- ❌ Commitizen
+- ✅ Lefthook (via Homebrew)
+- ❌ Editor Config
+- ❌ PNPM
 - ❌ markdownlint-cli2
 - ❌ Taplo
-- ❌ PNPM
+- ❌ Commitlint
+- ❌ Commitizen
 - ❌ Biome
 - ❌ Prettier
 - ❌ SOPS
+- ❌ ShellCheck
+- ❌ shfmt
+- ❌ shell-format
+- ❌ cspell
 
 ## Usage
 
@@ -29,7 +34,7 @@ repository's `README` file.
 ## Developer Quickstart
 
 1. Install mise
-2. Run `mise setup-dev`
+2. Run `mise run install`
 
 To see a list of tasks used to build and test the project, run:
 
