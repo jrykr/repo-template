@@ -1,0 +1,9 @@
+# MacOS files
+.DS_Store
+
+# Mise private configuration
+**/.mise.*.local.toml
+**/.mise.local.toml
+
+# VS Code private configuration
+**/.vscode/settings.json

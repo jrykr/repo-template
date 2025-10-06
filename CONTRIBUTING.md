@@ -1,0 +1,48 @@
+# Contributing
+
+## Prerequisite: Install Mise-en-Place
+
+[mise.jdx.dev](https://mise.jdx.dev)
+
+mise is a:
+
+- Polyglot tool version manager, replacing tools like asdf, nvm, pyenv, etc.
+- Environment variable manager, replacing direnv, dotenv, etc.
+- Task runner, replacing make, just, npm scripts, etc.
+
+```shell
+brew install mise
+
+# Activate Zsh integration
+echo 'eval "$(mise activate zsh)"' >> "${ZDOTDIR-$HOME}/.zshrc"
+```
+
+### `mise` Completions
+
+If you used Homebrew, completions may have been installed for you. Check the
+output logs.
+
+If you use oh-my-zsh, there is a mise plugin.
+
+Otherwise:
+
+```shell
+# Look for zsh completions:
+echo $fpath | tr ' ' '\n'
+
+# Example installation:
+mise completion zsh  > ~/.zsh/site-functions/_mise
+```
+
+### VS Code Integration
+
+The `hverlin.mise-vscode` extension will automatically configure other
+extensions to use tools provided by mise in your current project. This is
+important because you want editor extensions to have and use the same versions
+of tools that you invoke on the command line and in your CI environment.
+
+### Usage
+
+The `.mise.toml` file is intended to be shared in version control.
+
+For personal settings use `.mise.local.toml`.

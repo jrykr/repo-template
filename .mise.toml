@@ -1,0 +1,3 @@
+[tasks.setup-dev]
+description = "Install all tools and dependencies for local development"
+run = "echo This does nothing yet."
