@@ -7,6 +7,7 @@ This is an opinionated Git repository template using:
 - ✅ Editor Config
 - ✅ shfmt
 - ✅ shell-format
+- ✅ ShellCheck
 - ❌ PNPM
 - ❌ markdownlint-cli2
 - ❌ Taplo
@@ -15,7 +16,6 @@ This is an opinionated Git repository template using:
 - ❌ Biome
 - ❌ Prettier
 - ❌ SOPS
-- ❌ ShellCheck
 - ❌ cspell
 
 ## Usage

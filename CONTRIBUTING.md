@@ -63,6 +63,14 @@ VS Code integration: `editorconfig.editorconfig`
 Lefthook is a Git hooks manager. If not found, it will be installed via
 Homebrew.
 
+## ShellCheck
+
+[shellcheck.net](https://www.shellcheck.net)
+
+ShellCheck is a static analysis tool for shell scripts.
+
+VS Code integration: `timonwong.shellcheck`
+
 ## shfmt
 
 [patrickvane/shfmt](https://github.com/patrickvane/shfmt)

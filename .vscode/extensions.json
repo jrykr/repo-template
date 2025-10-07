@@ -2,6 +2,7 @@
   "recommendations": [
     "editorconfig.editorconfig",
     "foxundermoon.shell-format",
-    "hverlin.mise-vscode"
+    "hverlin.mise-vscode",
+    "timonwong.shellcheck"
   ]
 }
