@@ -12,17 +12,13 @@ get_location() {
 }
 
 if get_location >/dev/null 2>&1; then
-  echo "✓ shfmt is already installed"
-  echo "  Version: $(get_version)"
-  echo "  Location: $(get_location)"
+  echo "✓ shfmt $(get_version) is already installed at $(get_location)"
 else
   echo "✗ shfmt is not installed. Installing shfmt via Homebrew..."
-
   if brew install shfmt; then
     echo "✓ shfmt successfully installed!"
-    echo "  Version: $(get_version)"
   else
-    echo "✗ Installation failed"
+    echo "✗ shfmt installation failed"
     exit 1
   fi
 fi
