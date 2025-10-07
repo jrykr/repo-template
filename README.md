@@ -5,6 +5,8 @@ This is an opinionated Git repository template using:
 - ✅ mise
 - ✅ Lefthook (via Homebrew)
 - ✅ Editor Config
+- ✅ shfmt
+- ✅ shell-format
 - ❌ PNPM
 - ❌ markdownlint-cli2
 - ❌ Taplo
@@ -14,8 +16,6 @@ This is an opinionated Git repository template using:
 - ❌ Prettier
 - ❌ SOPS
 - ❌ ShellCheck
-- ❌ shfmt
-- ❌ shell-format
 - ❌ cspell
 
 ## Usage

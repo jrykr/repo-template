@@ -62,3 +62,11 @@ VS Code integration: `editorconfig.editorconfig`
 
 Lefthook is a Git hooks manager. If not found, it will be installed via
 Homebrew.
+
+## shfmt
+
+[patrickvane/shfmt](https://github.com/patrickvane/shfmt)
+
+shfmt is a shell formatter.
+
+VS Code integration: `foxundermoon.shell-format`
