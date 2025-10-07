@@ -69,7 +69,8 @@ Homebrew.
 
 ShellCheck is a static analysis tool for shell scripts.
 
-VS Code integration: `timonwong.shellcheck`
+- VS Code integration: `timonwong.shellcheck`
+- pre-commit: yes
 
 ## shfmt
 
@@ -77,4 +78,5 @@ VS Code integration: `timonwong.shellcheck`
 
 shfmt is a shell formatter.
 
-VS Code integration: `foxundermoon.shell-format`
+- VS Code integration: `foxundermoon.shell-format`
+- pre-commit: yes
