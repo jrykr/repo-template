@@ -5,3 +5,5 @@ pre-commit:
       glob: "*.sh"
     - run: shfmt -d -i 2 -ci {staged_files}
       glob: "*.sh"
+    - run: pnpm markdownlint-cli2 {staged_files}
+      glob: "*.md"

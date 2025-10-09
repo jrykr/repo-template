@@ -8,8 +8,9 @@ This is an opinionated Git repository template using:
 - ✅ shfmt
 - ✅ shell-format
 - ✅ ShellCheck
-- ❌ PNPM
-- ❌ markdownlint-cli2
+- ✅ Node
+- ✅ pnpm
+- ✅ markdownlint-cli2
 - ❌ Taplo
 - ❌ Commitlint
 - ❌ Commitizen
@@ -34,7 +35,7 @@ repository's `README` file.
 ## Developer Quickstart
 
 1. Install mise
-2. Run `mise run install`
+2. Run `mise run install-all`
 
 To see a list of tasks used to build and test the project, run:
 

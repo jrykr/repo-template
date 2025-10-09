@@ -1,3 +1,31 @@
-[tasks.install]
+[tasks.format]
+description = "Format all files"
+depends = ["format:*"]
+
+[tasks."format:shell"]
+description = "Format shell scripts"
+run = "shfmt --write ."
+
+[tasks."install-all"]
 description = "Install all tools and dependencies for local development"
 depends = ["install:*"]
+run = "mise install"
+depends_post = ["pnpm-install"]
+
+[tasks."pnpm-install"]
+hide = true
+description = "Installs dependencies with pnpm"
+run = "pnpm install"
+sources = ["package.json", "pnpm-lock.yaml", "mise.toml"]
+outputs = ["node_modules/.pnpm/lock.yaml"]
+
+[tasks.lint]
+description = "Run all linters"
+depends = ["lint:*"]
+
+[tasks."lint:markdown"]
+description = "Lint Markdown files"
+run = "pnpm markdownlint-cli2 ."
+
+[tools]
+node = { version = "22", postinstall = "corepack enable pnpm && corepack use pnpm@latest-10" }

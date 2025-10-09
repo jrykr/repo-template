@@ -5,6 +5,9 @@ lefthook-local.yml
 # MacOS files
 .DS_Store
 
+# Node.js
+**/node_modules/
+
 # Mise private configuration
 **/.mise.*.local.toml
 **/.mise.local.toml
