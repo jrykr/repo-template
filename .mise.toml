@@ -1,6 +1,6 @@
 [tasks.format]
-description = "Format all files"
 depends = ["format:*"]
+description = "Format all files"
 
 [tasks."format:shell"]
 description = "Format shell scripts"
@@ -11,21 +11,21 @@ description = "Format TOML files"
 run = "taplo fmt"
 
 [tasks."install-all"]
-description = "Install all tools and dependencies for local development"
 depends = ["install:*"]
-run = "mise install"
 depends_post = ["pnpm-install"]
+description = "Install all tools and dependencies for local development"
+run = "mise install"
 
 [tasks."pnpm-install"]
-hide = true
 description = "Installs dependencies with pnpm"
+hide = true
+outputs = ["node_modules/.pnpm/lock.yaml"]
 run = "pnpm install"
 sources = ["package.json", "pnpm-lock.yaml", "mise.toml"]
-outputs = ["node_modules/.pnpm/lock.yaml"]
 
 [tasks.lint]
-description = "Run all linters"
 depends = ["lint:*"]
+description = "Run all linters"
 
 [tasks."lint:markdown"]
 description = "Lint Markdown files"
@@ -36,5 +36,5 @@ description = "Lint TOML files"
 run = "taplo check"
 
 [tools]
-node = { version = "22", postinstall = "corepack enable pnpm && corepack use pnpm@latest-10" }
+node = { postinstall = "corepack enable pnpm && corepack use pnpm@latest-10", version = "22" }
 taplo = "0.10.0"
