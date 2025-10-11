@@ -2,11 +2,13 @@
 
 ## Style
 
-| File Type | Task   | Tool                | Pre-Commit | Mise            | VS Code                          |
+| File Type | Task   | Tool                | Pre-Commit | Mise Task       | VS Code                          |
 | --------- | ------ | ------------------- | ---------- | --------------- | -------------------------------- |
 | Markdown  | Lint   | `markdownlint-cli2` | ✅         | `lint:markdown` | `davidanson.vscode-markdownlint` |
 | Shell     | Format | `shfmt`             | ✅         | `format:shell`  | `foxundermoon.shell-format`      |
 |           | Lint   | `shellcheck`        | ✅         | ❌              | `timonwong.shellcheck`           |
+| TOML      | Lint   | `taplo`             | ✅         | `lint:toml`     | `tamasfe.even-better-toml`       |
+|           | Format | `taplo`             | ✅         | `format:toml`   | `tamasfe.even-better-toml`       |
 
 ## Getting Started
 
@@ -121,3 +123,9 @@ ShellCheck is a static analysis tool for shell scripts.
 [patrickvane/shfmt](https://github.com/patrickvane/shfmt)
 
 shfmt is a shell formatter.
+
+## taplo
+
+[taplo.tamasafe.dev](https://taplo.tamasfe.dev/cli/introduction.html)
+
+Use taplo to validate, format, and query TOML documents.

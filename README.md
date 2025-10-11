@@ -11,7 +11,7 @@ This is an opinionated Git repository template using:
 - ✅ Node
 - ✅ pnpm
 - ✅ markdownlint-cli2
-- ❌ Taplo
+- ✅ Taplo
 - ❌ Commitlint
 - ❌ Commitizen
 - ❌ Biome

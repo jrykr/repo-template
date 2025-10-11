@@ -4,6 +4,7 @@
     "editorconfig.editorconfig",
     "foxundermoon.shell-format",
     "hverlin.mise-vscode",
+    "tamasfe.even-better-toml",
     "timonwong.shellcheck"
   ]
 }

@@ -6,6 +6,10 @@ depends = ["format:*"]
 description = "Format shell scripts"
 run = "shfmt --write ."
 
+[tasks."format:toml"]
+description = "Format TOML files"
+run = "taplo fmt"
+
 [tasks."install-all"]
 description = "Install all tools and dependencies for local development"
 depends = ["install:*"]
@@ -27,5 +31,10 @@ depends = ["lint:*"]
 description = "Lint Markdown files"
 run = "pnpm markdownlint-cli2 ."
 
+[tasks."lint:toml"]
+description = "Lint TOML files"
+run = "taplo check"
+
 [tools]
 node = { version = "22", postinstall = "corepack enable pnpm && corepack use pnpm@latest-10" }
+taplo = "0.10.0"
