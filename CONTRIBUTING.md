@@ -27,6 +27,13 @@ For tools with pinned versions, such as Node, we use `mise`.
 
 ## Developer Tools
 
+### commitlint
+
+[commitlint.js.org](https://commitlint.js.org)
+
+Lint commit messages according to the [Conventional
+Commit](https://www.conventionalcommits.org/en/v1.0.0/) specification.
+
 ### EditorConfig
 
 [editorconfig.org](https://editorconfig.org)

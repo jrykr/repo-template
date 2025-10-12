@@ -11,3 +11,8 @@ pre-commit:
       glob: "*.toml"
     - run: taplo fmt --check {staged_files}
       glob: "*.toml"
+
+commit-msg:
+  commands:
+    "lint commit message":
+      run: pnpm commitlint --edit {1}

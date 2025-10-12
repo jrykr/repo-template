@@ -12,12 +12,12 @@ This is an opinionated Git repository template using:
 - ✅ pnpm
 - ✅ markdownlint-cli2
 - ✅ Taplo
-- ❌ Commitlint
-- ❌ Commitizen
+- ✅ Commitlint
 - ❌ Biome
 - ❌ Prettier
 - ❌ SOPS
 - ❌ cspell
+- ❌ Release Please
 
 ## Usage
 
