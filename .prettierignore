@@ -1,0 +1,19 @@
+# By default prettier ignores files in version control systems directories and
+# node_modules and all files in .gitignore.
+
+# Defer to Biome
+**/*.css
+**/*.{graphql,gql}
+**/*.json{,c}
+**/*.{js,cjs,mjs,ts}
+**/*.{jsx,tsx}
+
+# Defer Shell
+**/*.sh
+
+# Defer TOML
+**/*.toml
+
+**/build
+**/coverage
+**/pnpm-lock.yaml

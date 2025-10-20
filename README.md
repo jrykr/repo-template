@@ -14,7 +14,7 @@ This is an opinionated Git repository template using:
 - ✅ Taplo
 - ✅ Commitlint
 - ✅ Biome
-- ❌ Prettier
+- ✅ Prettier
 - ❌ SOPS
 - ❌ cspell
 - ❌ Release Please

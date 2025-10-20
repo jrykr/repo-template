@@ -1,17 +1,18 @@
 pre-commit:
   parallel: true
   jobs:
+    - run: pnpm biome check {staged_files}
+    - run: pnpm markdownlint-cli2 {staged_files}
+      glob: "*.md"
+    - run: pnpm prettier --ignore-unknown --check {staged_files}
     - run: shellcheck {staged_files}
       glob: "*.sh"
     - run: shfmt -d -i 2 -ci {staged_files}
       glob: "*.sh"
-    - run: pnpm markdownlint-cli2 {staged_files}
-      glob: "*.md"
     - run: taplo check {staged_files}
       glob: "*.toml"
     - run: taplo fmt --check {staged_files}
       glob: "*.toml"
-    - run: biome check {staged_files}
 
 commit-msg:
   commands:

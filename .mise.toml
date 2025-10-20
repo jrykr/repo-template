@@ -6,6 +6,10 @@ description = "Format all files"
 description = "Run Biome over configured files"
 run = "pnpm biome format --write"
 
+[tasks."format:prettier"]
+description = "Run Prettier over configured files"
+run = "pnpm prettier --write ."
+
 [tasks."format:shell"]
 description = "Format shell scripts"
 run = "shfmt --write ."

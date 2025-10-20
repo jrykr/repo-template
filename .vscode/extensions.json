@@ -3,6 +3,7 @@
     "biomejs.biome",
     "davidanson.vscode-markdownlint",
     "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
     "foxundermoon.shell-format",
     "hverlin.mise-vscode",
     "tamasfe.even-better-toml",
