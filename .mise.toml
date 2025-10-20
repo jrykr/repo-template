@@ -2,6 +2,10 @@
 depends = ["format:*"]
 description = "Format all files"
 
+[tasks."format:biome"]
+description = "Run Biome over configured files"
+run = "pnpm biome format --write"
+
 [tasks."format:shell"]
 description = "Format shell scripts"
 run = "shfmt --write ."
@@ -26,6 +30,10 @@ sources = ["package.json", "pnpm-lock.yaml", "mise.toml"]
 [tasks.lint]
 depends = ["lint:*"]
 description = "Run all linters"
+
+[tasks."lint:biome"]
+description = "Run Biome over configured files"
+run = "pnpm biome lint"
 
 [tasks."lint:markdown"]
 description = "Lint Markdown files"

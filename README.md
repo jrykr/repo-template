@@ -13,7 +13,7 @@ This is an opinionated Git repository template using:
 - ✅ markdownlint-cli2
 - ✅ Taplo
 - ✅ Commitlint
-- ❌ Biome
+- ✅ Biome
 - ❌ Prettier
 - ❌ SOPS
 - ❌ cspell

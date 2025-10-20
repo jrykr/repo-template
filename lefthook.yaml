@@ -11,6 +11,7 @@ pre-commit:
       glob: "*.toml"
     - run: taplo fmt --check {staged_files}
       glob: "*.toml"
+    - run: biome check {staged_files}
 
 commit-msg:
   commands:

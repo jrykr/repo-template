@@ -2,13 +2,23 @@
 
 ## Style
 
-| File Type | Task   | Tool                | Pre-Commit | Mise Task       | VS Code                          |
-| --------- | ------ | ------------------- | ---------- | --------------- | -------------------------------- |
-| Markdown  | Lint   | `markdownlint-cli2` | ✅         | `lint:markdown` | `davidanson.vscode-markdownlint` |
-| Shell     | Format | `shfmt`             | ✅         | `format:shell`  | `foxundermoon.shell-format`      |
-|           | Lint   | `shellcheck`        | ✅         | ❌              | `timonwong.shellcheck`           |
-| TOML      | Lint   | `taplo`             | ✅         | `lint:toml`     | `tamasfe.even-better-toml`       |
-|           | Format | `taplo`             | ✅         | `format:toml`   | `tamasfe.even-better-toml`       |
+| File Type     | Task   | Tool                | Pre-Commit | Mise Task       | VS Code                          |
+| ------------- | ------ | ------------------- | ---------- | --------------- | -------------------------------- |
+| CSS           | Format | `biome`             | ✅         | `format:biome`  | `biomejs.biome`                  |
+| CSS           | Lint   | `biome`             | ✅         | `lint:biome`    | `biomejs.biome`                  |
+| GraphQL       | Format | `biome`             | ✅         | `format:biome`  | `biomejs.biome`                  |
+| GraphQL       | Lint   | `biome`             | ✅         | `lint:biome`    | `biomejs.biome`                  |
+| JSON/C        | Format | `biome`             | ✅         | `format:biome`  | `biomejs.biome`                  |
+| JSON/C        | Lint   | `biome`             | ✅         | `lint:biome`    | `biomejs.biome`                  |
+| JSX/TSX       | Format | `biome`             | ✅         | `format:biome`  | `biomejs.biome`                  |
+| JSX/TSX       | Lint   | `biome`             | ✅         | `lint:biome`    | `biomejs.biome`                  |
+| JavaScript/TS | Format | `biome`             | ✅         | `format:biome`  | `biomejs.biome`                  |
+| JavaScript/TS | Lint   | `biome`             | ✅         | `lint:biome`    | `biomejs.biome`                  |
+| Markdown      | Lint   | `markdownlint-cli2` | ✅         | `lint:markdown` | `davidanson.vscode-markdownlint` |
+| Shell         | Format | `shfmt`             | ✅         | `format:shell`  | `foxundermoon.shell-format`      |
+| Shell         | Lint   | `shellcheck`        | ✅         | ❌              | `timonwong.shellcheck`           |
+| TOML          | Format | `taplo`             | ✅         | `format:toml`   | `tamasfe.even-better-toml`       |
+| TOML          | Lint   | `taplo`             | ✅         | `lint:toml`     | `tamasfe.even-better-toml`       |
 
 ## Getting Started
 
@@ -19,13 +29,24 @@ developer tools.
 mise run install-all
 ```
 
-Some tools don't have pinned versions, such as Lefthook. Generally,
-you're advised to keep these up-to-date. If the tool isn't already on your path,
-we use Homebrew to install it.
+Some tools don't have pinned versions, such as Lefthook. Generally, you're
+advised to keep these up-to-date. If the tool isn't already on your path, we use
+Homebrew to install it.
 
 For tools with pinned versions, such as Node, we use `mise`.
 
 ## Developer Tools
+
+### Biome
+
+- Format JavaScript, TypeScript, JSX, TSX, JSON, HTML, CSS and GraphQL.
+- Lint JavaScript, TypeScript, JSX, CSS and GraphQL.
+
+If Prettier does all this formatting and more, why bother with Biome?
+
+Biome lints JavaScript, whereas Prettier needs to be paired with ESLint. Either
+way you need two tools. In some projects, it might make sense to adopt ESLint
+because of its configurability, but Biome provides a sensible default linter.
 
 ### commitlint
 
@@ -41,13 +62,13 @@ Commit](https://www.conventionalcommits.org/en/v1.0.0/) specification.
 EditorConfig helps maintain consistent coding styles for multiple developers
 working on the same project across various editors and IDEs.
 
-## Lefthook
+### Lefthook
 
 [lefthook.dev](https://lefthook.dev)
 
 Lefthook is a Git hooks manager.
 
-## markdownlint-cli2
+### markdownlint-cli2
 
 [DavidAnson/markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2)
 
@@ -101,7 +122,7 @@ The `.mise.toml` file is intended to be shared in version control.
 
 For personal settings use `.mise.local.toml`.
 
-## Node.js
+### Node.js
 
 [nodejs.org](https://nodejs.org)
 
@@ -109,7 +130,7 @@ Node is used for certain dev dependencies. This is a pinned dependency at the
 root level of your project for the repository developer tooling. You could have
 a different Node environment and packages installed as assets in the project.
 
-## pnpm
+### pnpm
 
 [pnpm.io](https://pnpm.io)
 
@@ -119,19 +140,19 @@ Since it depends on Node, whose pinned version we very much care about and is
 managed by mise, pnpm is also managed via mise tool versions under Node's
 corepack.
 
-## ShellCheck
+### ShellCheck
 
 [shellcheck.net](https://www.shellcheck.net)
 
 ShellCheck is a static analysis tool for shell scripts.
 
-## shfmt
+### shfmt
 
 [patrickvane/shfmt](https://github.com/patrickvane/shfmt)
 
 shfmt is a shell formatter.
 
-## taplo
+### taplo
 
 [taplo.tamasafe.dev](https://taplo.tamasfe.dev/cli/introduction.html)
 
