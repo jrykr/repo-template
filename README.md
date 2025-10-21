@@ -3,7 +3,7 @@
 This is an opinionated Git repository template using:
 
 - ✅ mise
-- ✅ Lefthook (via Homebrew)
+- ✅ Lefthook
 - ✅ Editor Config
 - ✅ shfmt
 - ✅ shell-format

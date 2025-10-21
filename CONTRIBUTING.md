@@ -2,18 +2,12 @@
 
 ## Getting Started
 
-After you install `mise` and Homebrew, run the following command to install all
-developer tools.
+After you install `mise` run the following command to install all developer
+tools.
 
 ```console
 mise run install-all
 ```
-
-Some tools don't have pinned versions, such as Lefthook. Generally, you're
-advised to keep these up-to-date. If the tool isn't already on your path, we use
-Homebrew to install it.
-
-For tools with pinned versions, such as Node, we use `mise`.
 
 ## Checks
 
