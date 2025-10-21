@@ -16,7 +16,8 @@ This is an opinionated Git repository template using:
 - ✅ Biome
 - ✅ Prettier
 - ✅ cspell
-- ❌ SOPS
+- ✅ GitHub Actions
+- ❌ GitHub Dependabot
 - ❌ Release Please
 
 ## Usage

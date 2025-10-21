@@ -1,0 +1,22 @@
+name: Continuous Integration
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Static Code Checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: jdx/mise-action@v3
+        with:
+          install: false
+          cache: true
+      - run: mise run install-all
+      - run: mise run check
