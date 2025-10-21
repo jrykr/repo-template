@@ -20,6 +20,7 @@
     "lefthook",
     "patrickvane",
     "pyenv",
+    "risley",
     "shellcheck",
     "shfmt",
     "tamasfe",
