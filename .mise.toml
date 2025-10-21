@@ -1,3 +1,19 @@
+[tasks.check]
+depends = ["check:*", "lint"]
+description = "Run all static code analysis"
+
+[tasks."check:biome"]
+description = "Run Biome format check over configured files"
+run = "pnpm biome check"
+
+[tasks."check:prettier"]
+description = "Run Prettier check over configured files"
+run = "pnpm prettier --check ."
+
+[tasks."check:toml-fmt"]
+description = "Check TOML formatting"
+run = "taplo format --check"
+
 [tasks.format]
 depends = ["format:*"]
 description = "Format all files"

@@ -1,6 +1,29 @@
 # Contributing
 
-## Style
+## Getting Started
+
+After you install `mise` and Homebrew, run the following command to install all
+developer tools.
+
+```console
+mise run install-all
+```
+
+Some tools don't have pinned versions, such as Lefthook. Generally, you're
+advised to keep these up-to-date. If the tool isn't already on your path, we use
+Homebrew to install it.
+
+For tools with pinned versions, such as Node, we use `mise`.
+
+## Checks
+
+Run all static code checks over the entire codebase:
+
+```console
+mise run check
+```
+
+The Git pre-commit hook will automatically run checks limited to staged files.
 
 | File Type     | Task   | Tool                | Pre-Commit | Mise Task         | VS Code                               |
 | ------------- | ------ | ------------------- | ---------- | ----------------- | ------------------------------------- |
@@ -23,21 +46,6 @@
 | TOML          | Format | `taplo`             | ✅         | `format:toml`     | tamasfe.even-better-toml`             |
 | TOML          | Lint   | `taplo`             | ✅         | `lint:toml`       | tamasfe.even-better-toml              |
 | YAML          | Format | `prettier`          | ✅         | `format:prettier` | esbenp.prettier-vscode                |
-
-## Getting Started
-
-After you install `mise` and Homebrew, run the following command to install all
-developer tools.
-
-```console
-mise run install-all
-```
-
-Some tools don't have pinned versions, such as Lefthook. Generally, you're
-advised to keep these up-to-date. If the tool isn't already on your path, we use
-Homebrew to install it.
-
-For tools with pinned versions, such as Node, we use `mise`.
 
 ## Developer Tools
 
