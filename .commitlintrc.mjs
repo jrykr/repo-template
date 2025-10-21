@@ -22,6 +22,7 @@ const Configuration = {
         "revert",
         "style",
         "test",
+        "wip",
       ],
     ],
     // "scope-enum": [RuleConfigSeverity.Error, "always", ["core", "web"]],
