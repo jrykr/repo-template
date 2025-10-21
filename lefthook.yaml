@@ -1,7 +1,10 @@
 pre-commit:
   parallel: true
   jobs:
-    - run: pnpm biome check {staged_files}
+    - run: pnpm biome check --no-errors-on-unmatched {staged_files}
+    - run: >-
+        pnpm cspell --no-summary --no-progress --no-must-find-files
+        {staged_files}
     - run: pnpm markdownlint-cli2 {staged_files}
       glob: "*.md"
     - run: pnpm prettier --ignore-unknown --check {staged_files}
@@ -16,5 +19,8 @@ pre-commit:
 
 commit-msg:
   commands:
-    "lint commit message":
+    "check conventional commit message":
       run: pnpm commitlint --edit {1}
+    "check spelling":
+      run: cat {1} | pnpm cspell --no-summary --no-progress stdin
+      fail_text: in your commit message cached at .git/COMMIT_EDITMSG

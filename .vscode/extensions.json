@@ -6,6 +6,7 @@
     "esbenp.prettier-vscode",
     "foxundermoon.shell-format",
     "hverlin.mise-vscode",
+    "streetsidesoftware.code-spell-checker",
     "tamasfe.even-better-toml",
     "timonwong.shellcheck"
   ]

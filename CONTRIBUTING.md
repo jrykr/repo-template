@@ -2,26 +2,27 @@
 
 ## Style
 
-| File Type     | Task   | Tool                | Pre-Commit | Mise Task         | VS Code                        |
-| ------------- | ------ | ------------------- | ---------- | ----------------- | ------------------------------ |
-| CSS           | Format | `biome`             | ✅         | `format:biome`    | biomejs.biome                  |
-| CSS           | Lint   | `biome`             | ✅         | `lint:biome`      | biomejs.biome                  |
-| GraphQL       | Format | `biome`             | ✅         | `format:biome`    | biomejs.biome                  |
-| GraphQL       | Lint   | `biome`             | ✅         | `lint:biome`      | biomejs.biome                  |
-| HTML          | Format | `prettier`          | ✅         | `format:prettier` | esbenp.prettier-vscode         |
-| JSON/C        | Format | `biome`             | ✅         | `format:biome`    | biomejs.biome                  |
-| JSON/C        | Lint   | `biome`             | ✅         | `lint:biome`      | biomejs.biome                  |
-| JSX/TSX       | Format | `biome`             | ✅         | `format:biome`    | biomejs.biome                  |
-| JSX/TSX       | Lint   | `biome`             | ✅         | `lint:biome`      | biomejs.biome                  |
-| JavaScript/TS | Format | `biome`             | ✅         | `format:biome`    | biomejs.biome                  |
-| JavaScript/TS | Lint   | `biome`             | ✅         | `lint:biome`      | biomejs.biome                  |
-| Markdown      | Lint   | `markdownlint-cli2` | ✅         | `lint:markdown`   | davidanson.vscode-markdownlint |
-| Markdown      | Format | `prettier`          | ✅         | `format:prettier` | esbenp.prettier-vscode         |
-| Shell         | Format | `shfmt`             | ✅         | `format:shell`    | foxundermoon.shell-format      |
-| Shell         | Lint   | `shellcheck`        | ✅         | ❌                | timonwong.shellcheck           |
-| TOML          | Format | `taplo`             | ✅         | `format:toml`     | tamasfe.even-better-toml`      |
-| TOML          | Lint   | `taplo`             | ✅         | `lint:toml`       | tamasfe.even-better-toml       |
-| YAML          | Format | `prettier`          | ✅         | `format:prettier` | esbenp.prettier-vscode         |
+| File Type     | Task   | Tool                | Pre-Commit | Mise Task         | VS Code                               |
+| ------------- | ------ | ------------------- | ---------- | ----------------- | ------------------------------------- |
+| CSS           | Format | `biome`             | ✅         | `format:biome`    | biomejs.biome                         |
+| CSS           | Lint   | `biome`             | ✅         | `lint:biome`      | biomejs.biome                         |
+| GraphQL       | Format | `biome`             | ✅         | `format:biome`    | biomejs.biome                         |
+| GraphQL       | Lint   | `biome`             | ✅         | `lint:biome`      | biomejs.biome                         |
+| HTML          | Format | `prettier`          | ✅         | `format:prettier` | esbenp.prettier-vscode                |
+| JSON/C        | Format | `biome`             | ✅         | `format:biome`    | biomejs.biome                         |
+| JSON/C        | Lint   | `biome`             | ✅         | `lint:biome`      | biomejs.biome                         |
+| JSX/TSX       | Format | `biome`             | ✅         | `format:biome`    | biomejs.biome                         |
+| JSX/TSX       | Lint   | `biome`             | ✅         | `lint:biome`      | biomejs.biome                         |
+| JavaScript/TS | Format | `biome`             | ✅         | `format:biome`    | biomejs.biome                         |
+| JavaScript/TS | Lint   | `biome`             | ✅         | `lint:biome`      | biomejs.biome                         |
+| Markdown      | Lint   | `markdownlint-cli2` | ✅         | `lint:markdown`   | davidanson.vscode-markdownlint        |
+| Markdown      | Format | `prettier`          | ✅         | `format:prettier` | esbenp.prettier-vscode                |
+| Shell         | Format | `shfmt`             | ✅         | `format:shell`    | foxundermoon.shell-format             |
+| Shell         | Lint   | `shellcheck`        | ✅         | ❌                | timonwong.shellcheck                  |
+| Spelling      | Lint   | `cspell`            | ✅         | `lint:spelling`   | streetsidesoftware.code-spell-checker |
+| TOML          | Format | `taplo`             | ✅         | `format:toml`     | tamasfe.even-better-toml`             |
+| TOML          | Lint   | `taplo`             | ✅         | `lint:toml`       | tamasfe.even-better-toml              |
+| YAML          | Format | `prettier`          | ✅         | `format:prettier` | esbenp.prettier-vscode                |
 
 ## Getting Started
 
@@ -58,6 +59,14 @@ because of its configurability, but Biome provides a sensible default linter.
 Lint commit messages according to the
 [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/)
 specification.
+
+### cSpell
+
+[cspell.org](https://cspell.org/)
+
+To add a word to the dictionary for everyone, use the `.cspell.json`
+configuration file, which is checked into version control. The VS Code extension
+by default adds words only to your private workspace settings.
 
 ### EditorConfig
 
@@ -166,6 +175,6 @@ shfmt is a shell formatter.
 
 ### taplo
 
-[taplo.tamasafe.dev](https://taplo.tamasfe.dev/cli/introduction.html)
+[taplo.tamasfe.dev](https://taplo.tamasfe.dev/cli/introduction.html)
 
 Use taplo to validate, format, and query TOML documents.

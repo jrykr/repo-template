@@ -15,8 +15,8 @@ This is an opinionated Git repository template using:
 - ✅ Commitlint
 - ✅ Biome
 - ✅ Prettier
+- ✅ cspell
 - ❌ SOPS
-- ❌ cspell
 - ❌ Release Please
 
 ## Usage

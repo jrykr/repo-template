@@ -43,6 +43,10 @@ run = "pnpm biome lint"
 description = "Lint Markdown files"
 run = "pnpm markdownlint-cli2 ."
 
+[tasks."lint:spelling"]
+description = "Run spellcheck"
+run = "pnpm cspell ."
+
 [tasks."lint:toml"]
 description = "Lint TOML files"
 run = "taplo check"

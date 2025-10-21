@@ -1,0 +1,29 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "ignorePaths": [
+    "**/.git",
+    "**/.vscode",
+    "**/node_modules",
+    "**/package.json",
+    "**/pnpm-lock.yaml"
+  ],
+  "words": [
+    "commitlint",
+    "davidanson",
+    "direnv",
+    "editmsg",
+    "esbenp",
+    "foxundermoon",
+    "fpath",
+    "hverlin",
+    "patrickvane",
+    "pyenv",
+    "shellcheck",
+    "shfmt",
+    "tamasfe",
+    "taplo",
+    "timonwong",
+    "zdotdir"
+  ]
+}
