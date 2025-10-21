@@ -35,7 +35,6 @@ description = "Format TOML files"
 run = "taplo fmt"
 
 [tasks."install-all"]
-depends = ["install:*"]
 depends_post = ["pnpm-install"]
 description = "Install all tools and dependencies for local development"
 run = "mise install"
@@ -68,5 +67,8 @@ description = "Lint TOML files"
 run = "taplo check"
 
 [tools]
+lefthook = "latest"
 node = { postinstall = "corepack enable pnpm && corepack use pnpm@latest-10", version = "22" }
+shellcheck = "latest"
+shfmt = "latest"
 taplo = "0.10.0"
