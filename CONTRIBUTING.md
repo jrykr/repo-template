@@ -46,9 +46,8 @@ The Git pre-commit hook will automatically run checks limited to staged files.
 We use release-please to manage releases automatically via GitHub Actions.
 
 - Do not manually create release tags or GitHub releases.
-- Generate release PRs by manually running the release Action.
-- Once you've merged a release PR, manually run the release Action to actually
-  create the release.
+- Release PRs are created and updated on each merge into the main branch.
+- GitHub release artifacts are created when you merge the release PR.
 
 ## Developer Tools
 
