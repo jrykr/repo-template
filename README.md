@@ -20,7 +20,7 @@ This is an opinionated Git repository template using:
 - ✅ GitHub Dependabot
 - ✅ CODEOWNERS
 - ✅ Release Please
-- ❌ Software Bill of Materials (SBOM)
+- ✅ Software Bill of Materials (SBOM)
 
 ## Usage
 
@@ -43,7 +43,8 @@ Post-creation steps:
   repository.
 - Update `.github/dependabot.yaml` for your ecosystems.
 - Update the release type in `.release-please-config.json`
-- Set up a `RELEASE_PLEASE_TOKEN` GitHub secret (see
+- Allow GitHub Actions to create and approve pull requests
+- Optionally, set up a `RELEASE_PLEASE_TOKEN` GitHub secret (see
   [release-please docs](https://github.com/googleapis/release-please-action?tab=readme-ov-file#other-actions-on-release-please-prs))
 
 ## Developer Quickstart

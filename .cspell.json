@@ -9,6 +9,7 @@
     "**/pnpm-lock.yaml"
   ],
   "words": [
+    "anchore",
     "codeowners",
     "commitlint",
     "davidanson",

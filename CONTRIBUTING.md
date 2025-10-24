@@ -9,9 +9,9 @@ tools.
 mise run install-all
 ```
 
-## Checks
+## Style
 
-Run all static code checks over the entire codebase:
+Run all style checks over the entire codebase:
 
 ```console
 mise run check

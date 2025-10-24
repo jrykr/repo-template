@@ -5,7 +5,7 @@ reduce software vulnerability risk.
 
 ## Reporting a Vulnerability
 
-Email: <security@example.com>
+Email: ❌ (TODO) <security@example.com>
 
 - Affected component & version (commit SHA if applicable)
 - Steps to reproduce (or proof-of-concept)
@@ -38,12 +38,12 @@ tasks:
 
 ### Dependency and Supply-Chain Management
 
-- ❌ (TODO) GitHub Dependabot monitors all declared dependencies and raises pull
-  requests for version updates or known vulnerabilities.
+- GitHub Dependabot monitors all declared dependencies and raises pull requests
+  for version updates or known vulnerabilities.
 - Each Dependabot alert is reviewed and merged promptly after verification of
   compatibility and stability.
-- ❌ (not implemented) A Software Bill of Materials (SBOM) is generated for each
-  release and published alongside artifacts.
+- A Software Bill of Materials (SBOM) is generated for each release and
+  published alongside artifacts.
 
 ### CI/CD and Build Integrity
 
