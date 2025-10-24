@@ -1,0 +1,4 @@
+# Examples:
+# @global-owner
+# *.js @js-owner
+# /some/project @directory-owner

@@ -33,6 +33,8 @@ tasks:
   testing (SAST).
 - CodeQL scan results are reviewed before merges; findings are tracked and
   triaged as security issues.
+- ❌ (TODO) Deployable branches are protected; proposed merges require review
+  from individuals identified in the `CODEOWNERS` file.
 
 ### Dependency and Supply-Chain Management
 

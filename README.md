@@ -18,7 +18,7 @@ This is an opinionated Git repository template using:
 - ✅ cspell
 - ✅ GitHub Actions
 - ✅ GitHub Dependabot
-- ❌ CODEOWNERS
+- ✅ CODEOWNERS
 - ❌ Release Please
 - ❌ Software Bill of Materials (SBOM)
 
