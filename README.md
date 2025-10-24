@@ -17,8 +17,10 @@ This is an opinionated Git repository template using:
 - ✅ Prettier
 - ✅ cspell
 - ✅ GitHub Actions
-- ❌ GitHub Dependabot
+- ✅ GitHub Dependabot
+- ❌ CODEOWNERS
 - ❌ Release Please
+- ❌ Software Bill of Materials (SBOM)
 
 ## Usage
 
@@ -32,6 +34,14 @@ works and detailed steps to onboard a new developer.
 
 You may want to keep the **Developer Quickstart** section below in your new
 repository's `README` file.
+
+Post-creation steps:
+
+- Update the `README.md` file.
+- Update the `LICENSE` file.
+- Update the `SECURITY.md` file and implement associated features in your
+  repository.
+- Update `.github/dependabot.yaml` for your ecosystems.
 
 ## Developer Quickstart
 
