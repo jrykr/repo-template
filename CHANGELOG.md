@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/jrykr/repo-template/compare/v1.1.0...v1.1.1) (2025-10-24)
+
+
+### Bug Fixes
+
+* expose release-please outputs for SBOM job ([c91142a](https://github.com/jrykr/repo-template/commit/c91142a10db2deb5f0b3e52d06d9964fa9160a52))
+
 ## [1.1.0](https://github.com/jrykr/repo-template/compare/v1.0.0...v1.1.0) (2025-10-24)
 
 
