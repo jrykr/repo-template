@@ -163,6 +163,13 @@ Prettier is an opinionated formatter that supports many languages.
 
 We use it for HTML, Markdown, and YAML. Other languages use Biome.
 
+### release-please
+
+[googleapis/release-please](https://github.com/googleapis/release-please)
+
+Release Please automates CHANGELOG generation, the creation of GitHub releases,
+and version bumps.
+
 ### ShellCheck
 
 [shellcheck.net](https://www.shellcheck.net)
