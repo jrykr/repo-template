@@ -10,6 +10,7 @@ on:
 
 jobs:
   release-please:
+    name: Release Please
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -23,6 +24,7 @@ jobs:
           manifest-file: .release-please-manifest.json
 
   bill-of-materials:
+    name: Bill of Materials
     needs: release-please
     if: needs.release-please.outputs.release_created
     runs-on: ubuntu-latest
