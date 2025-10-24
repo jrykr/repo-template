@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/jrykr/repo-template/compare/v1.1.2...v1.2.0) (2025-10-24)
+
+
+### Features
+
+* auto-run release workflow on push to main ([4aa7fde](https://github.com/jrykr/repo-template/commit/4aa7fdecf7aa42442e77e85f5160b7d24a2ea725))
+
 ## [1.1.2](https://github.com/jrykr/repo-template/compare/v1.1.1...v1.1.2) (2025-10-24)
 
 
