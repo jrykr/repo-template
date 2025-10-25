@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/jrykr/repo-template/compare/v1.2.0...v1.3.0) (2025-10-25)
+
+
+### Features
+
+* use advanced CodeQL scans ([#12](https://github.com/jrykr/repo-template/issues/12)) ([a13cfb8](https://github.com/jrykr/repo-template/commit/a13cfb8b2392ee3e062e9a9d318e9eb3e843cdde))
+
 ## [1.2.0](https://github.com/jrykr/repo-template/compare/v1.1.2...v1.2.0) (2025-10-24)
 
 
