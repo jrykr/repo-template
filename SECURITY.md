@@ -28,9 +28,10 @@ tasks:
 
 ### Code Quality and Security Analysis
 
-- ❌ (TODO) GitHub CodeQL is configured to run automatically on all pull
-  requests and pushes to protected branches for static application security
-  testing (SAST).
+- GitHub CodeQL is configured to run automatically on all pull requests and
+  pushes to the main branch for static application security testing (SAST).
+  CodeQL also runs periodically to detect newly-discovered vulnerabilities in
+  existing code.
 - CodeQL scan results are reviewed before merges; findings are tracked and
   triaged as security issues.
 - ❌ (TODO) Deployable branches are protected; proposed merges require review
