@@ -27,6 +27,7 @@
     "shellcheck",
     "shfmt",
     "ssdf",
+    "syft",
     "tamasfe",
     "taplo",
     "timonwong",
