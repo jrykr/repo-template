@@ -34,8 +34,9 @@ tasks:
   existing code.
 - CodeQL scan results are reviewed before merges; findings are tracked and
   triaged as security issues.
-- Gitleaks secret scanning runs automatically on all pull requests and pushes to
-  detect accidentally committed credentials and sensitive data.
+- Gitleaks secret scanning runs locally pre-commit and automatically on all pull
+  requests and pushes to detect accidentally committed credentials and sensitive
+  data.
 - ❌ (TODO) Deployable branches are protected; proposed merges require review
   from individuals identified in the `CODEOWNERS` file.
 
@@ -50,10 +51,12 @@ tasks:
 
 ### CI/CD and Build Integrity
 
-- All CI workflows enforce security checks (linting, tests, CodeQL, secret
-  scanning, dependency checks).
-- ❌ (TODO) Least privilege access is enforced for repository secrets and GitHub
-  Actions runners; MFA is required for all maintainers.
+- All CI workflows enforce security checks (linting, CodeQL, secret scanning).
+  Project-specific test suites and dependency audits should be added based on
+  your technology stack.
+- GitHub Actions workflows use least-privilege permissions scoped to specific
+  jobs.
+- ❌ (TODO) Least privilege access is enforced for maintainers; MFA is required.
 - ❌ (not implemented) Release artifacts and Git tags are cryptographically
   signed.
 
