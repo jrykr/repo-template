@@ -10,6 +10,10 @@ run = "pnpm biome check"
 description = "Run Prettier check over configured files"
 run = "pnpm prettier --check ."
 
+[tasks."check:secrets"]
+description = "Scan Git history for secrets using Gitleaks"
+run = "gitleaks git"
+
 [tasks."check:toml-fmt"]
 description = "Check TOML formatting"
 run = "taplo format --check"
@@ -67,6 +71,7 @@ description = "Lint TOML files"
 run = "taplo check"
 
 [tools]
+gitleaks = "latest"
 lefthook = "latest"
 node = { postinstall = "corepack enable pnpm && corepack use pnpm@latest-10", version = "22" }
 shellcheck = "latest"

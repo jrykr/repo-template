@@ -16,6 +16,7 @@ pre-commit:
       glob: "*.toml"
     - run: taplo fmt --check {staged_files}
       glob: "*.toml"
+    - run: gitleaks protect --verbose --staged
 
 commit-msg:
   commands:
