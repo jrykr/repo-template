@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.0](https://github.com/jrykr/repo-template/compare/v1.2.0...v1.3.0) (2025-10-27)
+
+
+### Features
+
+* use advanced CodeQL scans ([#12](https://github.com/jrykr/repo-template/issues/12)) ([a13cfb8](https://github.com/jrykr/repo-template/commit/a13cfb8b2392ee3e062e9a9d318e9eb3e843cdde))
+* use Gitleaks ([#14](https://github.com/jrykr/repo-template/issues/14)) ([75fa104](https://github.com/jrykr/repo-template/commit/75fa1048f91a0367b1a4a0e6344726844540f3a1))
+
 ## [1.2.0](https://github.com/jrykr/repo-template/compare/v1.1.2...v1.2.0) (2025-10-24)
 
 
