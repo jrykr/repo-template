@@ -19,6 +19,7 @@ This is an opinionated Git repository template using:
 - ✅ GitHub Actions
 - ✅ GitHub Dependabot
 - ✅ CodeQL vulnerability scanning
+- ✅ Gitleaks (secret scanning)
 - ✅ CODEOWNERS
 - ✅ Release Please
 - ✅ Software Bill of Materials (SBOM)
