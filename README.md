@@ -59,7 +59,9 @@ repository's `README` file.
 - [ ] Update `README.md`
 - [ ] Update `LICENSE`
 - [ ] Update `CODEOWNERS`
-- [ ] Update `SECURITY.md` Add your security contact email
+- [ ] Update `SECURITY.md`: Add your security contact email
+- [ ] Update or delete `CHANGELOG.md`: Make it your own
+- [ ] Reset `.release-please-manifest.json` and `package.json` to version 0.0.0
 - [ ] Update `.github/dependabot.yaml`: Configure for your project's package
       ecosystems (currently set for npm and GitHub Actions)
 - [ ] Update `.github/workflows/codeql.yaml` for your languages (as available)
