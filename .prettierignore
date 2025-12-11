@@ -19,4 +19,4 @@
 **/pnpm-lock.yaml
 
 # The changelog is managed by release-please
-/CHANGELOG.md
+**/CHANGELOG.md
