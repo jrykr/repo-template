@@ -1,3 +1,12 @@
+[tools]
+gitleaks = "latest"
+lefthook = "latest"
+node = { postinstall = "corepack enable pnpm && corepack use pnpm@latest-10", version = "24.11.1" }
+shellcheck = "latest"
+shfmt = "latest"
+taplo = "0.10.0"
+
+
 [tasks.check]
 depends = ["check:*", "lint"]
 description = "Run all static code analysis"
@@ -69,11 +78,3 @@ run = "pnpm cspell ."
 [tasks."lint:toml"]
 description = "Lint TOML files"
 run = "taplo check"
-
-[tools]
-gitleaks = "latest"
-lefthook = "latest"
-node = { postinstall = "corepack enable pnpm && corepack use pnpm@latest-10", version = "22" }
-shellcheck = "latest"
-shfmt = "latest"
-taplo = "0.10.0"
