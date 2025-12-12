@@ -9,7 +9,10 @@ updates:
       interval: "weekly"
     commit-message:
       prefix: "build"
-      include: "scope"
+    groups:
+      npm-build-deps:
+        patterns:
+          - "*"
 
   - package-ecosystem: "npm"
     allow:
@@ -19,7 +22,10 @@ updates:
       interval: "weekly"
     commit-message:
       prefix: "chore"
-      include: "scope"
+    groups:
+      npm-dev-deps:
+        patterns:
+          - "*"
 
   - package-ecosystem: "github-actions"
     directory: "/"
@@ -27,4 +33,7 @@ updates:
       interval: "weekly"
     commit-message:
       prefix: "ci"
-      include: "scope"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
