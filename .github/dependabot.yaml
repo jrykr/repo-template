@@ -2,30 +2,16 @@ version: 2
 
 updates:
   - package-ecosystem: "npm"
-    allow:
-      - dependency-type: "production"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    commit-message:
-      prefix: "build"
-    groups:
-      npm-build-deps:
-        patterns:
-          - "*"
-
-  - package-ecosystem: "npm"
-    allow:
-      - dependency-type: "development"
     directory: "/"
     schedule:
       interval: "weekly"
     commit-message:
       prefix: "chore"
     groups:
+      npm-build-deps:
+        dependency-type: "production"
       npm-dev-deps:
-        patterns:
-          - "*"
+        dependency-type: "development"
 
   - package-ecosystem: "github-actions"
     directory: "/"
