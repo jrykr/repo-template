@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.4.0](https://github.com/jrykr/repo-template/compare/v1.3.0...v1.4.0) (2026-01-01)
+
+
+### Features
+
+* group Dependabot PRs ([#19](https://github.com/jrykr/repo-template/issues/19)) ([6794f26](https://github.com/jrykr/repo-template/commit/6794f26957962baf045cccdf04967f063cbd9448))
+* ignore all CHANGELOG.md files ([dc6da5b](https://github.com/jrykr/repo-template/commit/dc6da5ba5bd850cdfc00db1c896be3a45467528d))
+
+
+### Bug Fixes
+
+* entries can't have the same directory and branch ([30eb131](https://github.com/jrykr/repo-template/commit/30eb131aec0d1088f845babf8627fc3c7aedb949))
+
 ## [1.3.0](https://github.com/jrykr/repo-template/compare/v1.2.0...v1.3.0) (2025-10-27)
 
 
